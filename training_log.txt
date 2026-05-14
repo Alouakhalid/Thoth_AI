@@ -1,0 +1,45 @@
+[2026-05-14 23:10:44] TRAINED | Text: "Hello new test words for dynamic training" | Tokens: 14 | Chunks: 1 | Epochs: 10 | Avg Loss: 4.0256
+[2026-05-14 23:11:36] TRAINED | Text: "Hello JabberwockyXYZ99 how are you?" | Tokens: 7 | Chunks: 1 | Epochs: 30 | Avg Loss: 6.5246
+[2026-05-14 23:12:48] TRAINED | Text: "Hello" | Tokens: 3 | Chunks: 1 | Epochs: 10 | Avg Loss: 1.4295
+[2026-05-14 23:14:10] TRAINED | Text: "Hello" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 6.0184
+[2026-05-14 23:16:05] TRAINED | Text: "hello" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 5.9166
+[2026-05-14 23:20:38] TRAINED | Text: "how are you?" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 3.0760
+[2026-05-14 23:23:28] TRAINED | Text: "Hello new large architecture test" | Tokens: 7 | Chunks: 1 | Epochs: 30 | Avg Loss: 1.4702
+[2026-05-14 23:27:02] TRAINED | Text: "hello" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 0.3769
+[2026-05-14 23:29:32] TRAINED | Text: "
+Artificial intelligence (AI) is the intelligence of machine" | Tokens: 233 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.7760
+[2026-05-14 23:29:38] TRAINED | Text: "Artificial intelligence has rapidly evolved from a narrow ac" | Tokens: 177 | Chunks: 1 | Epochs: 30 | Avg Loss: 3.0866
+[2026-05-14 23:29:49] TRAINED | Text: "how are you?" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.4133
+[2026-05-14 23:31:47] TRAINED | Text: "who are" | Tokens: 4 | Chunks: 1 | Epochs: 30 | Avg Loss: 6.1595
+[2026-05-14 23:32:04] TRAINED | Text: "you are" | Tokens: 4 | Chunks: 1 | Epochs: 30 | Avg Loss: 3.0459
+[2026-05-14 23:32:05] TRAINED | Text: "are you? you?" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.6521
+[2026-05-14 23:32:06] TRAINED | Text: "how are you" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.5282
+[2026-05-14 23:32:09] TRAINED | Text: "fuck" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.8165
+[2026-05-14 23:33:08] TRAINED | Text: "hello" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.8278
+[2026-05-14 23:33:26] TRAINED | Text: "how are you" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 1.9865
+[2026-05-14 23:33:39] TRAINED | Text: "fine" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.1439
+[2026-05-14 23:33:39] TRAINED | Text: "fuck" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.0219
+[2026-05-14 23:33:48] TRAINED | Text: "Artificial intelligence has rapidly evolved from a narrow ac" | Tokens: 177 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.0921
+[2026-05-14 23:34:28] TRAINED | Text: "Artificial intelligence has rapidly evolved from a narrow ac" | Tokens: 177 | Chunks: 1 | Epochs: 30 | Avg Loss: 1.7845
+[2026-05-14 23:36:28] TRAINED | Text: "how are you" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.1437
+[2026-05-14 23:38:26] TRAINED | Text: "The sun rises in the east and sets in the west. Every mornin" | Tokens: 48 | Chunks: 1 | Epochs: 30 | Avg Loss: 10.2607
+[2026-05-14 23:38:32] TRAINED | Text: "Technology has changed the way we live. Computers and smartp" | Tokens: 43 | Chunks: 1 | Epochs: 30 | Avg Loss: 5.4360
+[2026-05-14 23:40:02] TRAINED | Text: "The sun rises in the east and sets in the west. Every mornin" | Tokens: 48 | Chunks: 1 | Epochs: 30 | Avg Loss: 1.4364
+[2026-05-14 23:40:27] TRAINED | Text: "The development of intelligent systems has transformed the r" | Tokens: 1011 | Chunks: 4 | Epochs: 30 | Avg Loss: 6.3496
+[2026-05-14 23:40:28] TRAINED | Text: "Technology has changed the way we live. Computers and smartp" | Tokens: 43 | Chunks: 1 | Epochs: 30 | Avg Loss: 5.8054
+[2026-05-14 23:40:29] TRAINED | Text: "Education is important for everyone. Schools teach students " | Tokens: 38 | Chunks: 1 | Epochs: 30 | Avg Loss: 5.3446
+[2026-05-14 23:40:30] TRAINED | Text: "The ocean covers more than seventy percent of the Earth surf" | Tokens: 47 | Chunks: 1 | Epochs: 30 | Avg Loss: 5.0237
+[2026-05-14 23:40:32] TRAINED | Text: "Music brings people together. It can make us happy, sad, or " | Tokens: 37 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.8170
+[2026-05-14 23:40:33] TRAINED | Text: "Good health requires a balanced diet and regular exercise. E" | Tokens: 36 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.6813
+[2026-05-14 23:40:35] TRAINED | Text: "Space exploration has led to many important discoveries. Ast" | Tokens: 40 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.5594
+[2026-05-14 23:40:37] TRAINED | Text: "Climate change is one of the biggest challenges facing human" | Tokens: 47 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.4104
+[2026-05-14 23:40:38] TRAINED | Text: "Books have been an important source of knowledge for centuri" | Tokens: 42 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.2680
+[2026-05-14 23:40:40] TRAINED | Text: "The history of human civilization spans thousands of years. " | Tokens: 47 | Chunks: 1 | Epochs: 30 | Avg Loss: 4.1865
+[2026-05-14 23:40:52] TRAINED | Text: "The sun" | Tokens: 4 | Chunks: 1 | Epochs: 30 | Avg Loss: 3.9811
+[2026-05-14 23:40:55] TRAINED | Text: "Education is" | Tokens: 4 | Chunks: 1 | Epochs: 30 | Avg Loss: 3.7761
+[2026-05-14 23:40:56] TRAINED | Text: "how are you" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 3.5907
+[2026-05-14 23:41:49] TRAINED | Text: "The development of intelligent systems has transformed the r" | Tokens: 1011 | Chunks: 4 | Epochs: 30 | Avg Loss: 3.6383
+[2026-05-14 23:49:57] TRAINED | Text: "What is artificial intelligence?" | Tokens: 6 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.9613
+[2026-05-15 00:09:35] TRAINED | Text: "HELLO" | Tokens: 3 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.8259
+[2026-05-15 00:10:50] TRAINED | Text: "The sun is" | Tokens: 5 | Chunks: 1 | Epochs: 30 | Avg Loss: 2.0521
+[2026-05-15 00:13:31] TRAINED | Text: "I was thinking recently about how quickly technology changes" | Tokens: 167 | Chunks: 1 | Epochs: 30 | Avg Loss: 1.5293
