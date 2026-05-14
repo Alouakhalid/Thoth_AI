@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoth AI — Intelligent Text Generation</title>
+    <meta name="description" content="Thoth AI - A continuously-learning text generation engine that grows smarter with every conversation. Built with Transformer architecture.">
+    <link rel="icon" href="/static/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="brand">
+                <img src="/static/logo.png" alt="Thoth" class="brand-logo">
+                <div class="brand-text">
+                    <h1>Thoth AI</h1>
+                    <span class="brand-subtitle">Wisdom Engine</span>
+                </div>
+            </div>
+            <button class="new-chat-btn" id="new-chat-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                New Chat
+            </button>
+        </div>
+        <div class="sidebar-nav">
+            <div class="nav-section-title">Settings</div>
+            <div class="setting-group">
+                <label for="temperature">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+                    Temperature
+                    <span class="setting-value" id="temp-val">0.8</span>
+                </label>
+                <input type="range" id="temperature" min="0.1" max="2.0" step="0.1" value="0.8">
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <button class="sidebar-footer-btn" id="toggle-stats-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                Model Dashboard
+            </button>
+            <button class="sidebar-footer-btn" id="toggle-logs-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                Training Logs
+            </button>
+            <button class="sidebar-footer-btn" id="bulk-train-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                Bulk Train
+            </button>
+            <button class="sidebar-footer-btn" id="export-chat-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Export Chat
+            </button>
+            <div class="model-info">
+                <div class="model-status">
+                    <span class="status-dot"></span>
+                    <span>Model Online</span>
+                </div>
+                <span class="model-version">Thoth V1 · Transformer · 6L/256d</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile sidebar toggle -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+
+    <!-- Main Chat Area -->
+    <main class="main-content">
+        <div class="chat-container" id="chat-container">
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcome-screen">
+                <img src="/static/logo.png" alt="Thoth" class="welcome-logo">
+                <h2>Thoth AI</h2>
+                <p class="welcome-subtitle">Intelligent · Adaptive · Continuously Learning</p>
+                <p class="welcome-desc">I am a continuously-learning language model. Every message you send trains me to become smarter. Ask me anything or teach me something new.</p>
+                <div class="welcome-chips">
+                    <button class="chip" data-prompt="Tell me about ancient Egypt">🏛️ Ancient Egypt</button>
+                    <button class="chip" data-prompt="What is artificial intelligence?">🤖 About AI</button>
+                    <button class="chip" data-prompt="How does the sun work?">☀️ How the Sun Works</button>
+                    <button class="chip" data-prompt="Tell me about space exploration">🚀 Space Exploration</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea id="chat-input" placeholder="Message Thoth..." rows="1" autofocus></textarea>
+                <button id="send-btn" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </div>
+            <p class="input-disclaimer">Thoth is a small learning model. It may produce inaccurate text. Train it with more data to improve quality.</p>
+        </div>
+    </main>
+
+    <!-- Training Logs Panel -->
+    <div class="logs-overlay" id="logs-overlay"></div>
+    <div class="logs-panel" id="logs-panel">
+        <div class="logs-header">
+            <h3>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                Training Logs
+            </h3>
+            <button class="close-logs-btn" id="close-logs-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="logs-content" id="logs-content">
+            <p class="logs-empty">No training logs yet. Send a message to start training.</p>
+        </div>
+    </div>
+
+    <!-- Bulk Train Modal -->
+    <div class="modal-overlay" id="bulk-modal-overlay"></div>
+    <div class="modal" id="bulk-modal">
+        <div class="modal-header">
+            <h3>📚 Bulk Train Thoth</h3>
+            <button class="close-modal-btn" id="close-bulk-modal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Paste large paragraphs of English text below. Thoth will deeply train on it (30 epochs) to learn vocabulary, grammar, and meaning.</p>
+            <textarea id="bulk-text" placeholder="Paste your training text here... (the more text, the smarter Thoth becomes)" rows="8"></textarea>
+            <button class="train-submit-btn" id="submit-bulk-train">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                Train Now
+            </button>
+            <div class="train-status" id="train-status"></div>
+        </div>
+    </div>
+
+    <!-- Model Stats Dashboard -->
+    <div class="modal-overlay" id="stats-modal-overlay"></div>
+    <div class="modal" id="stats-modal">
+        <div class="modal-header">
+            <h3>📊 Model Dashboard</h3>
+            <button class="close-modal-btn" id="close-stats-modal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="stats-grid" id="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-label">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
